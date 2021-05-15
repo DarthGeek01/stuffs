@@ -1,2 +1,2 @@
 # stuffs
-things
+Repository containing my dotfiles/assorted configuration from $HOME

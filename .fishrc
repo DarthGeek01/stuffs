@@ -1,0 +1,29 @@
+fish_vi_key_bindings
+
+# Aliases
+alias pros prosv5
+alias ud "sudo pacman -Syu"
+alias comsig "git commit -S -m"
+alias dotfiles '/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias xcm exercism
+alias fd fdfind
+alias cat batcat
+
+alias clipboard "xclip -selection clipboard"
+alias cd.. "cd .."
+
+# Env variables
+set -x GPG_TTY (tty)
+set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+
+set -x GITHUB "https://github.com"
+
+set -x XZ_OPT "--threads=8"
+set -x EDITOR "vim"
+set -x VISUAL $EDITOR
+
+set -x XDG_CONFIG_HOME $HOME/.config
+
+# Executables
+gpgconf --launch gpg-agent
+
